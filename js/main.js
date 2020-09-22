@@ -108,9 +108,9 @@ function loadSection(section, callback){
             .data(content["pages"][section])
             .enter()
             .append("div")
-            .attr("class", function(d){
+            .attr("class", function(d, i){
                 var pageType = (["intro","takeaways","conclusion","acknowledgments","resources"].indexOf(section) != -1) ? " topLevel" : " question"
-                return "contentBlock " + d.contentType + " " + section + pageType
+                return "contentBlock " + d.contentType + " " + section + pageType + " cb" + i
             })
             .html(function(d){
                 var contentEl;

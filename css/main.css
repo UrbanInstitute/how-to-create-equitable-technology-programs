@@ -83,9 +83,14 @@ a, .anchorLink, .sectionLink{
 }    
 .contentBlock.title.question{
     border-bottom: 1px solid transparent;   
+    margin-bottom: 0px;
+    padding-bottom: 18px;
+}
+.contentBlock.video.intro {
+    margin-top: 44px;
 }
 .contentBlock.gif.intro{
-    margin-top: 80px;
+    margin-top: 44px;
     width: 100%;
 }
 .contentBlock.gif.intro img{
@@ -94,7 +99,7 @@ a, .anchorLink, .sectionLink{
 .takeawayContainer{
     border: 1px solid #d2d2d2;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     padding: 33px;
 }
 .takeawayHeader{
@@ -159,8 +164,6 @@ a, .anchorLink, .sectionLink{
 .quoteContainer{
     width: 100%;
     float: right;
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 .quoteQuote{
     text-align: left;
@@ -197,7 +200,6 @@ a, .anchorLink, .sectionLink{
     padding-left: 28px;
     padding-right: 28px;
     padding-top: 33px;
-    margin-top: 20px;
     padding-bottom: 70px;
     position: relative;  
     overflow: hidden;  
@@ -293,15 +295,15 @@ h3{
     margin-bottom: 40px;
 }
 .tbImgTitle{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    font-style: italic;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 40px;
+    font-style: normal;
 }
 .toolBoxSubEl.paragraph img{
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .toolBoxImg{
     width: 310px;
@@ -380,7 +382,7 @@ h3{
     font-size: 18px;
     font-style: italic;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .contentBlock.title.intro div span{
