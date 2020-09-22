@@ -26,19 +26,29 @@ function buildTakeawaysData(){
     console.log(content.pages.takeaways)
 
 }
+var CAN_AUTO_PLAY_URBAN;
 function init(){
     d3.select("#toc").selectAll("*").remove()
     d3.select("#page").selectAll("*").remove()
     // d3.select("#tableContainer").selectAll("*").remove()
 
-
-    var section = (window.location.hash == "") ? content["contents"][0]["slug"] : window.location.hash.replace("#","")
-    buildToc(section, function(){
-        loadSection(section, function(){
-            buildResourceTable()
-        })    
-    })
-
+    canAutoplay
+        .video({muted: true, inline: true})
+        .then(function(result, error){
+            if(result === false){
+                CAN_AUTO_PLAY_URBAN = false;
+            }else{
+                CAN_AUTO_PLAY_URBAN = true;
+            }
+        })
+        .then(function(){
+            var section = (window.location.hash == "") ? content["contents"][0]["slug"] : window.location.hash.replace("#","")
+            buildToc(section, function(){
+                loadSection(section, function(){
+                    buildResourceTable()
+                })    
+            })
+        })
     
 }
 function buildToc(section, callback){
@@ -104,11 +114,15 @@ function loadSection(section, callback){
             })
             .html(function(d){
                 var contentEl;
+                var contentHtmlGifReturn = "foo";
                 if(d.contentType == "title") contentEl = getTitleEl(d.content, section)
                 else if(d.contentType == "takeaways") contentEl = getTakeawayEl(d.content)
                 else if(d.contentType == "paragraph") contentEl = getParagraphEl(d.content)
                 else if(d.contentType == "caseStudy") contentEl = getCaseStudyEl(d.content)
-                else if(d.contentType == "video") contentEl = getVideoEl(d.content)
+                else if(d.contentType == "gif"){
+                    if(CAN_AUTO_PLAY_URBAN) contentEl = getVideoEl(d.content)
+                    else contentHeader = getGifEl(d.content)
+                }
                 else if(d.contentType == "quote") contentEl = getQuoteEl(d.content)
                 else if(d.contentType == "expand") contentEl = getExpandEl(d.content)
                 else if(d.contentType == "sectionHeader") contentEl = getHeaderEl(d.content)
@@ -125,7 +139,6 @@ function loadSection(section, callback){
                 else d3.select("body").classed("print", false)
 
                 if(d.hasOwnProperty("anchor")) contentEl.attr("id", d.anchor)
-
                 var contentHtml = contentEl.node().outerHTML
                 contentEl.remove()
                 return contentHtml
@@ -357,14 +370,22 @@ function getVideoEl(content){
         .style("width","100%")
         .property("loop", true)
         .attr("muted", true)
+        .attr("playsinline", true)
         // .property("controls", true)
         .attr("preload", "auto")
     videoEl.append("source")
-        .attr("src", "images/" + content)
+        .attr("src", "images/" + content + ".mp4")
         .attr("type", "video/mp4")
     return videoEl
 
 }
+
+function getGifEl(content){
+    var gifEl = d3.select("body").append("img")
+        .attr("src", "images/" + content + ".gif")
+    return gifEl 
+}
+
 function getQuoteEl(content){
     var quoteEl = d3.select("body").append("div")
         .attr("class", "quoteContainer")

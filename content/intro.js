@@ -1,7 +1,7 @@
 content.pages.intro = [
     {
-        "contentType" : "video",
-        "content" : "home-map.mp4"
+        "contentType" : "gif",
+        "content" : "home-map"
     },
     {
         "contentType" : "title",

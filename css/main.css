@@ -84,8 +84,12 @@ a, .anchorLink, .sectionLink{
 .contentBlock.title.question{
     border-bottom: 1px solid transparent;   
 }
-.contentBlock.video.intro{
+.contentBlock.gif.intro{
     margin-top: 80px;
+    width: 100%;
+}
+.contentBlock.gif.intro img{
+    width: 100%;
 }
 .takeawayContainer{
     border: 1px solid #d2d2d2;
@@ -642,13 +646,13 @@ th:nth-child(1) .tablesorter-header-inner, th:nth-child(6) .tablesorter-header-i
     text-align: center;
     vertical-align: sub;
     color: #fff;
-    font-family: monospace;
-    font-size: 15px;
+    font-family: Lato;
+    font-size: 14px;
     border-radius: 100%;
     padding-bottom: 6px;
     position: relative;
     top: -4px;
-    margin-left: 5px;
+    margin-left: 6px;
     cursor: pointer;
 }
 

@@ -31,7 +31,7 @@ content.pages.acknowledgments = [
                 ["Development", "Ben Chartoff"],
                 ["Editing", "Fiona Blackshaw and Serena Lei"]
             ],
-            "github" : "www.example.com"
+            "github" : "https://github.com/urbaninstitute/how-to-create-equitable-technology-programs"
         }
     }
 ]
