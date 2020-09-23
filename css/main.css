@@ -203,6 +203,8 @@ a, .anchorLink, .sectionLink{
     padding-bottom: 70px;
     position: relative;  
     overflow: hidden;  
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 .expandTitle{
     font-weight: bold;
