@@ -5,7 +5,7 @@ content.pages.acknowledgments = [
     },
     {
         "contentType" : "paragraph",
-        "content" : "This feature was funded with a grant from the Mastercard Impact Fund in collaboration with the Mastercard Center for Inclusive Growth. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission."
+        "content" : "This feature was funded in collaboration with the <a href = \"https://www.mastercardcenter.org/\" target = \"_blank\">Mastercard Center for Inclusive Growth</a>. We are grateful to them and to all our funders, who make it possible for Urban to advance its mission."
     },
     {
         "contentType" : "paragraph",
