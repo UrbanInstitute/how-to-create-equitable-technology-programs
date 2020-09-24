@@ -5,7 +5,7 @@ content.pages.takeaways = [
     },
     {
         "contentType" : "title",
-        "content" : "Key takeaways <span class = \"printView\">from <em>Creating Equitable Technology Programs: A Guide for Cities</em></span><a href = \"takeaways_print\" target=\"_blank\"><div class = \"nonPrintView printIcon\"><img src = \"images/printIcon.png\"><div>Print page</div></div></a>"
+        "content" : "Key takeaways <span class = \"printView\">from <em>Creating Equitable Technology Programs: A Guide for Cities</em></span><a href = \"takeaways_print.html\" target=\"_blank\"><div class = \"nonPrintView printIcon\"><img src = \"images/printIcon.png\"><div>Print page</div></div></a>"
     },
     {
         "contentType" : "paragraph",

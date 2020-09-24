@@ -21,9 +21,7 @@ function buildTakeawaysData(){
 
 
     }
-    console.log(takeaways)
     content.pages.takeaways.splice.apply(content.pages.takeaways, [3,0].concat(takeaways))
-    console.log(content.pages.takeaways)
 
 }
 var CAN_AUTO_PLAY_URBAN;
@@ -98,7 +96,6 @@ function loadSection(section, callback){
         contentsHeader.classed("active", true)
         if(contentsHeader.classed("question")) d3.select(".contentsHeader.questions").classed("active", true)
     }
-    // console.log(section)
     if(section == "resources"){
         d3.select("#resourcesContainer").style("display","block")
         $("table").trigger("update")
@@ -311,7 +308,6 @@ function initEvents(){
         })
 
     })
-    // anchorLink different consequences expand
 
 }
 function getTitleEl(content, section){
@@ -496,7 +492,6 @@ function getExpandEl(content){
     expandEl.style("height", heightSmall + "px")
 
 
-    // console.log(heightSmall, heightLarge)
 
     return expandEl
 
@@ -585,7 +580,6 @@ function getCreditsEl(content){
 function buildResourceTable(){
     // d3.csv('content/resources.csv')
     //     .then(function(data) {
-    //         console.log(data)
     //         var table = d3.select("#tableContainer").append("table")
 
     //         table.append("thead").append("tr")
