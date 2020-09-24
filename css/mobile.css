@@ -8,6 +8,31 @@
 #isTablet, #isPhone{
     display: none;
 }
+#mobileTT{
+    position: fixed;
+    top: 50px;
+    left: -200%;
+    display: none;
+    width: 100%;
+    height: calc(100% - 100px);
+    z-index: 999999;
+    background: white;
+    padding-top: 100px;
+}
+#ttHead{
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+}
+#ttBody{
+    font-size: 16px;
+    font-style: italic;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    word-break: break-word;
+}
 @media(max-width: 1000px){
     #isTablet{
         display: block;
@@ -89,6 +114,9 @@
     }
     #page{
         width: calc(100% - 64px);
+    }
+    #mobileTT{
+        display: block;
     }
     body{
         margin: 0px;
@@ -186,6 +214,11 @@
         width: calc(100% - 40px);
         padding-left: 20px;
         font-size: 14px;
+    }
+}
+@media(max-width: 500px){
+    .caseStudySubEl.image{
+        width: 100%;
     }
 }
 @media(max-width: 415px){

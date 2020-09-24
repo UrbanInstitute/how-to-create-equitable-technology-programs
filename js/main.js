@@ -224,6 +224,9 @@ function initEvents(){
     d3.select("#boorgerContainer").on("click", function(){
         if(d3.select(this).classed("ex")){
             closeBoorger()
+            d3.select("#mobileTT")
+                .transition()
+                .style("left","-1000px")
         }else{
             openBoorger()
         }
@@ -231,25 +234,45 @@ function initEvents(){
 
     d3.selectAll(".tt-icon").on("mouseover", function(){
         var k = d3.select(this).attr("data-footnote")
-        if(d3.select(this).selectAll(".tt-container").nodes().length > 0) return false
-        var tt = d3.select(this).append("div").attr("class", "tt-container")
-            .style("z-index", function(){
-                return d3.selectAll(".tt-container").nodes().length + 1
-            })
-        tt.append("div")
-            .html(content["footnotes"][k])
-        tt.append("img")
-            .attr("class", "tt-close")
-            .attr("src","images/closeBlack.png")
-            .on("mouseover", function(){
-                d3.select(this).attr("src", "images/closeBlue.png")
-            })
-            .on("mouseout", function(){
-                d3.select(this).attr("src", "images/closeBlack.png")
-            })
-            .on("click", function(){
-                d3.select(this.parentNode).remove()
-            })
+        if(d3.select("#isPhone").style("display") == "block"){
+            d3.select("#boorgerContainer").classed("ex", true)
+            d3.select("#boorgerTop")
+                .transition()
+                .style("transform","rotate(45deg)")
+                .style("top","7px")
+            d3.select("#boorgerBottom")
+                .transition()
+                .style("transform","rotate(-45deg)")
+                .style("bottom","7px")  
+            
+            d3.select("#mobileTT")
+                .transition()
+                .style("left","0px")
+
+            d3.select("#ttBody")
+                .html(content["footnotes"][k])
+        }else{
+            var k = d3.select(this).attr("data-footnote")
+            if(d3.select(this).selectAll(".tt-container").nodes().length > 0) return false
+            var tt = d3.select(this).append("div").attr("class", "tt-container")
+                .style("z-index", function(){
+                    return d3.selectAll(".tt-container").nodes().length + 1
+                })
+            tt.append("div")
+                .html(content["footnotes"][k])
+            tt.append("img")
+                .attr("class", "tt-close")
+                .attr("src","images/closeBlack.png")
+                .on("mouseover", function(){
+                    d3.select(this).attr("src", "images/closeBlue.png")
+                })
+                .on("mouseout", function(){
+                    d3.select(this).attr("src", "images/closeBlack.png")
+                })
+                .on("click", function(){
+                    d3.select(this.parentNode).remove()
+                })
+        }
     })
 
     d3.selectAll(".anchorLink.same").on("click", function(){
