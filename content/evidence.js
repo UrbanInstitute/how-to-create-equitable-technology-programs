@@ -106,10 +106,6 @@ content.pages.evidence = [
             },
             {
                 "contentType" : "paragraph",
-                "content" : "One key to Portland’s success was hiring external consultants to facilitate workshops with the steering committee. The workshops brought together 20 people across 12–16 different city bureaus to build shared definitions of procedural, distributional, and structural equity. Another key was establishing the framework through a city council resolution; securing buy-in from the mayor and each city commissioner provided a crucial executive-level mandate for the team’s equity focus."
-            },
-            {
-                "contentType" : "paragraph",
                 "content" : "Costa Leabo noted that this effort fundamentally changed how the city does business. “We’re now infusing an equity lens in [sidewalk repairs] to ensure that we’re distributing resources more evenly across the city and targeting the more vulnerable populations first who we believe, based on our understanding of the [311] data, are not engaging with us in the way that other residents are.” The city started with sidewalk repairs because it had engineering survey data on the underlying quality and state of repair of sidewalks—data it does not have for the city’s other major assets. “It’s hard for us to know in many cases where the work needs to be done the most,” Costa Leabo added. The city plans to build these data resources and enable Boston to scale the success of StreetCaster to other public works efforts."
             }
         ]
