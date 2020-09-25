@@ -100,7 +100,7 @@ content.pages.marginalized = [
                 {
                     "contentType" : "paragraph",
                     "content" : 
-                        "<strong>City officials need to report back to communities on how they used the input from engagement sessions. Dragoman noted that breakdowns in feedback loops create engagement fatigue, observing people’s frustration when “government comes in and asks [the resident] for my opinion and then they leave, and I never hear what resulted from the interaction, and I don’t feel like I’m being listened to.” City officials should plan how they will incorporate the data gathered from community engagement sessions into the design and implementation of technology programs before they collect it, and they should share those plans—and the results—with the community."
+                        "City officials need to report back to communities on how they used the input from engagement sessions. Dragoman noted that breakdowns in feedback loops create engagement fatigue, observing people’s frustration when “government comes in and asks [the resident] for my opinion and then they leave, and I never hear what resulted from the interaction, and I don’t feel like I’m being listened to.” City officials should plan how they will incorporate the data gathered from community engagement sessions into the design and implementation of technology programs before they collect it, and they should share those plans—and the results—with the community."
                 }
             ]
         }
