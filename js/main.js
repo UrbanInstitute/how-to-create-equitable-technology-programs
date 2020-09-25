@@ -115,6 +115,7 @@ function loadSection(section, callback){
                 if(d.contentType == "title") contentEl = getTitleEl(d.content, section)
                 else if(d.contentType == "takeaways") contentEl = getTakeawayEl(d.content)
                 else if(d.contentType == "paragraph") contentEl = getParagraphEl(d.content)
+                else if(d.contentType == "correction") contentEl = getCorrectionEl(d.content)
                 else if(d.contentType == "caseStudy") contentEl = getCaseStudyEl(d.content)
                 else if(d.contentType == "gif"){
                     if(CAN_AUTO_PLAY_URBAN) contentEl = getVideoEl(d.content)
@@ -349,6 +350,10 @@ function getTakeawayEl(content){
 function getParagraphEl(content){
     var paragraphEl = d3.select("body").append("p").html(content)
     return paragraphEl
+}
+function getCorrectionEl(content){
+    var correctionEl = d3.select("body").append("p").html(content)
+    return correctionEl
 }
 function getPrintParagraphEl(content){
     var printParagraphEl = d3.select("body").append("p").classed("printView", true).html(content)

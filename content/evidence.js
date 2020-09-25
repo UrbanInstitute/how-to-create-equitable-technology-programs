@@ -113,5 +113,9 @@ content.pages.evidence = [
                 "content" : "Costa Leabo noted that this effort fundamentally changed how the city does business. “We’re now infusing an equity lens in [sidewalk repairs] to ensure that we’re distributing resources more evenly across the city and targeting the more vulnerable populations first who we believe, based on our understanding of the [311] data, are not engaging with us in the way that other residents are.” The city started with sidewalk repairs because it had engineering survey data on the underlying quality and state of repair of sidewalks—data it does not have for the city’s other major assets. “It’s hard for us to know in many cases where the work needs to be done the most,” Costa Leabo added. The city plans to build these data resources and enable Boston to scale the success of StreetCaster to other public works efforts."
             }
         ]
+    },
+    {
+        "contentType" : "correction",
+        "content" : "<strong>Correction:</strong> We found some cut-and-paste errors after publication! We accidentally left out a paragraph about how quantitative data can help designers of technology products or programs understand how lived experiences reflect larger trends. And in the Boston StreetCaster case study, we mistakenly included a paragraph about our Portland case study. (Corrected 9/25/20)"
     }
 ]
