@@ -34,6 +34,10 @@ content.pages.evidence = [
     },
     {
         "contentType" : "paragraph",
+        "content": "Designers of technology products or programs should also look to quantitative data to understand how lived experiences reflect larger trends. In addition, quantitative data on the severity and geographic distribution of the problem enables city officials to target resources where need is greatest and establish a baseline against which project performance can be measured."
+    },  
+    {
+        "contentType" : "paragraph",
         "content" : "However, quantitative data sources can reflect structural inequities and bias. Unless these biases are acknowledged and countered, quantitative evidence could unintentionally move a program toward inequitable results. For example, several studies have identified that higher-income neighborhoods are often overrepresented in public response data, such as <a href = \"https://www.urban.org/research/publication/toward-open-data-bias-assessment-tool\" target = \"_blank\">311 request data</a>. Even administrative data sources, such as <a href = \"http://apps.urban.org/features/2020-census/\" target = \"_blank\">census data</a> or city resident surveys, may undercount Black and Latinx populations."
     },
     {

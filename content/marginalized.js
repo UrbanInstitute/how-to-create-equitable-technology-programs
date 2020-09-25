@@ -79,29 +79,33 @@ content.pages.marginalized = [
                 {
                     "contentType" : "paragraph",
                     "content": "Cities should strive to move community engagement on technology programs toward empowerment and co-creation with communities. Kendrick shared that resident engagement around smart city programs involves “a lot of information sharing at first. When I say data, what definition are you picturing? Is that a different definition than I’m picturing? There’s a lot of capacity to build first, which may not always be typical of public engagement—you’re not going to do that in one public meeting and then all be on the same page and using the same definitions.”"
-                }
+                },
+                {
+                    "contentType" : "paragraph",
+                    "content" : "The <span class = \"frameworkHighliight\"><a href = \"https://www.slideshare.net/DeniseLinn/array-of-things-engagement-report\" target = \"_blank\">Array of Things engagement report</a></span> acknowledged that “informing and engaging at the same time is a challenge.” To allow attendees with no technical or project background to participate, the Array of Things staff often spent the vast majority of meeting time explaining the technology. However, Austin chief equity officer Brion Oaks observed that the perception that the community cannot understand complex technology is used as an excuse to inform rather than engage. “There are a lot of assumptions inherent in this attitude,” Oaks said, “that everyday people cannot understand, that they don’t have expertise to contribute.”"
+                },
+                {
+                    "contentType" : "paragraph",
+                    "content" : "Finding the right balance between informing and engaging on technology programs is a difficult, open question. One objective of Portland’s equity consulting advisor group is assessing the need for developing unique community engagement standards for smart city technologies that incorporate building community technical capacity and data literacy for meaningful engagement around data and technology."
+                }         
             ]
         }        
     },
     {
-        "contentType" : "paragraph",
-        "content" : "The <span class = \"frameworkHighliight\"><a href = \"https://www.slideshare.net/DeniseLinn/array-of-things-engagement-report\" target = \"_blank\">Array of Things engagement report</a></span> acknowledged that “informing and engaging at the same time is a challenge.” To allow attendees with no technical or project background to participate, the Array of Things staff often spent the vast majority of meeting time explaining the technology. However, Austin chief equity officer Brion Oaks observed that the perception that the community cannot understand complex technology is used as an excuse to inform rather than engage. “There are a lot of assumptions inherent in this attitude,” Oaks said, “that everyday people cannot understand, that they don’t have expertise to contribute.”"
+        "contentType" : "expand",
+        "content" : {
+            "title" : "Creating feedback loops:",
+            "small" : "City officials need to report back to communities on how they used the input from engagement sessions",
+            "content": [
+                {
+                    "contentType" : "paragraph",
+                    "content" : 
+                        "<strong>City officials need to report back to communities on how they used the input from engagement sessions. Dragoman noted that breakdowns in feedback loops create engagement fatigue, observing people’s frustration when “government comes in and asks [the resident] for my opinion and then they leave, and I never hear what resulted from the interaction, and I don’t feel like I’m being listened to.” City officials should plan how they will incorporate the data gathered from community engagement sessions into the design and implementation of technology programs before they collect it, and they should share those plans—and the results—with the community."
+                }
+            ]
+        }
     },
     {
-        "contentType" : "paragraph",
-        "content" : "Finding the right balance between informing and engaging on technology programs is a difficult, open question. One objective of Portland’s equity consulting advisor group is assessing the need for developing unique community engagement standards for smart city technologies that incorporate building community technical capacity and data literacy for meaningful engagement around data and technology."
-    },
-    {
-        "contentType" : "unorderedList",
-        "content" : [
-            "<strong>Creating feedback loops:</strong> City officials need to report back to communities on how they used the input from engagement sessions. Dragoman noted that breakdowns in feedback loops create engagement fatigue, observing people’s frustration when “government comes in and asks [the resident] for my opinion and then they leave, and I never hear what resulted from the interaction, and I don’t feel like I’m being listened to.” City officials should plan how they will incorporate the data gathered from community engagement sessions into the design and implementation of technology programs before they collect it, and they should share those plans—and the results—with the community. "
-        ]
-    },
-    {
-        "contentType" : "paragraph",
-        "content" : ""
-    },
-     {
         "contentType" : "quote",
         "content" : {
             "quote" : "Be intentional. Don’t harvest information and leave. Develop reciprocal relationships.",
